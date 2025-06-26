@@ -2,10 +2,6 @@ const express = require('express');
 const OpenAI = require('openai');
 const router = express.Router();
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
-
 // Mock responses for testing when API key is invalid or quota exceeded
 const mockResponses = [
     "Hello! I'm a mock AI assistant. Your OpenAI API key needs to be configured for real responses.",
@@ -41,6 +37,11 @@ router.post('/chat', async (req, res) => {
                 note: "Running in demo mode. Update your OpenAI API key for real AI responses."
             });
         }
+
+        // Initialize OpenAI client inside the route handler
+        const openai = new OpenAI({
+            apiKey: process.env.OPENAI_API_KEY,
+        });
 
         // Convert messages to OpenAI format
         const openaiMessages = messages.map(msg => ({
