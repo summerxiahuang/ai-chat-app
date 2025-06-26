@@ -63,38 +63,6 @@ npm start
 
 The application will be available at `http://localhost:3000`
 
-## 🌐 Deployment
-
-### GitHub Pages (Frontend)
-
-This app is configured for easy deployment to GitHub Pages:
-
-1. **Create GitHub Repository**
-   - Create a new repository named `ai-chat-app`
-   - Make it public
-
-2. **Update Homepage URL**
-   - Edit `frontend/package.json`
-   - Replace `YOUR_USERNAME` with your GitHub username
-
-3. **Deploy**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin https://github.com/YOUR_USERNAME/ai-chat-app.git
-   git push -u origin main
-   ```
-
-4. **Enable GitHub Pages**
-   - Go to repository Settings → Pages
-   - Select "Deploy from a branch"
-   - Choose "gh-pages" branch
-
-Your app will be live at: `https://YOUR_USERNAME.github.io/ai-chat-app`
-
-📖 **For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)**
-
 ## 📁 Project Structure
 
 ```
@@ -114,12 +82,8 @@ ai-chat-app/
 │   │   ├── App.js
 │   │   └── App.css
 │   └── package.json
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
 ├── package.json
-├── README.md
-└── DEPLOYMENT.md
+└── README.md
 ```
 
 ## 🔧 API Endpoints
@@ -188,8 +152,7 @@ If you encounter any issues:
 2. Verify your environment variables are set correctly
 3. Ensure MongoDB is running
 4. Check your OpenAI API key is valid
-5. See [DEPLOYMENT.md](./DEPLOYMENT.md) for deployment help
 
 ---
 
-Made with ❤️ using React and Node.js # Updated
+Made with ❤️ using React and Node.js

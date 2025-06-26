@@ -2,7 +2,6 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://summerxiahuang.github.io/ai-chat-app",
   "proxy": "http://localhost:5050",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
