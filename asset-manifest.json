@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ai-chat-app/static/css/main.78a91788.css",
+    "main.js": "/ai-chat-app/static/js/main.5268a998.js",
+    "index.html": "/ai-chat-app/index.html",
+    "main.78a91788.css.map": "/ai-chat-app/static/css/main.78a91788.css.map",
+    "main.5268a998.js.map": "/ai-chat-app/static/js/main.5268a998.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78a91788.css",
+    "static/js/main.5268a998.js"
+  ]
+}
