@@ -1,6 +1,9 @@
 import React, {useState, useRef, useEffect} from "react";
 import axios from "axios";
 
+// API configuration
+const API_BASE_URL = 'https://ai-chat-app-backend-777l.onrender.com';
+
 function Chat() {
   const [chat, setChat] = useState([]);
   const [message, setMessage] = useState('');
@@ -37,7 +40,7 @@ function Chat() {
         setIsLoading(true);
         
         try {
-            const response = await axios.post('/api/chat', {
+            const response = await axios.post(`${API_BASE_URL}/api/chat`, {
                 messages: [...chat, userMessage]
             });
             
